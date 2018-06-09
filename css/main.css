@@ -1,0 +1,458 @@
+*{
+  padding:0;
+  margin:0;
+  border:0;
+  box-sizing: border-box;
+}
+
+#barra a{
+	text-decoration: none;
+	color: white;
+}
+
+header{
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* configuração do texto fixo dentro do carousel de imagens */
+
+#fixa{
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+}
+
+#textoFixa{
+	width: 500px;
+}
+
+img#logo{
+	width: 120px;
+	margin-bottom: 50px;
+}
+
+#barra{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  list-style: none;
+  float: right;
+}
+
+i.fa-bars{
+	font-size: 28px;
+	margin-top: 32px;
+}
+
+div.carousel-caption{
+	color: white;
+	float: left;
+	text-align: left;
+	margin-bottom: 80px;
+}
+
+#botao1{
+	padding: 12px 34px 12px 34px;
+	border-radius: 4px;
+	color: white;
+	background-color: rgb(257, 56, 89);
+	float: left;
+}
+
+.imageSlide{
+	height: 600px;
+}
+
+nav{
+	margin: -10px;
+	padding: 24px;
+}
+
+.menu{
+	display: flex;
+	flex-flow: row wrap;
+  	justify-content: center;
+  	list-style: none;
+}
+
+.menu a{
+	padding: 24px;
+	font-weight: bold;
+	text-decoration: none;
+	color: rgb(44, 89, 153);
+}
+
+.menu a:hover{
+	padding: 8px 24px 8px 24px;
+	color: white;
+	background-color: rgb(60, 105, 169);
+	border-radius: 8px;
+	text-decoration: none;
+}
+
+#sobre{
+	height: 800px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+section{
+	flex: 50%;
+	height: 500px;
+	padding-right: 34px;
+	text-align: center;
+}
+
+
+
+/* Configuração do album de imagens */
+
+#albumImg{
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	margin-top: 12px;
+}
+
+
+.direita{
+	flex: 50%;
+	padding-right: 15px;
+}
+
+.esquerda{
+	flex: 50%;
+}
+
+/* Criação da div para fazer a camada transparente em cada imagem */
+
+div.transbox {
+	display: none;
+	width: 100%;
+	height: 100%;
+  	margin-top: 0;
+  	font-size:44px;
+  	background-color: rgba(100,149,237, 0.4);
+  	color: white;
+  	align-items: center;
+  	justify-content: center;
+  	position: relative;
+}
+
+div.camada:hover .transbox{
+	display: flex;
+}
+
+#imagem1{
+	width: 100%;
+	height: 275px;
+	margin-bottom: 15px;
+	background-image: url("../img/instituicao.png");
+}
+
+#imagem2{
+	width: 46%;
+	height: 130px;
+	margin-right: 15px;
+	background-image: url("../img/instituicao.png");
+	background-position: -15% top;
+}
+
+#imagem3{
+	width: 46%;
+	height: 130px;
+	background-image: url("../img/instituicao.png");
+	float: right;
+	margin-top: -130px;
+	background-position: 45% top;
+}
+
+#imagem4{
+	width: 100%;
+	height: 130px;
+	margin-bottom: 15px;
+	background-image: url("../img/instituicao.png");
+}
+
+#imagem5{
+	width: 46%;
+	height: 130px;
+	margin-bottom: 15px;
+	margin-right: 15px;
+	background-image: url("../img/instituicao.png");
+}
+
+#imagem6{
+	width: 46%;
+	height: 130px;
+	margin-bottom: 15px;
+	background-image: url("../img/instituicao.png");
+	float: right;
+	margin-top: -145px;
+}
+
+#imagem7{
+	width: 100%;
+	height: 130px;
+	background-image: url("../img/instituicao.png");
+}
+
+aside{
+	flex: 50%;
+}
+
+div.box{
+	margin-top: -50px;
+	padding: 100px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	text-align: center;
+	flex: 30%;
+}
+
+.box p{
+	font-size: 14px;
+}
+
+#destaque{
+	height: 400px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	background-image: url("../img/sergey.png");
+	background-position: center;
+	padding-top: 64px;
+}
+
+.column{
+	width: 500px;
+	color: white;
+}
+
+.column:nth-of-type(2){
+	padding-left: 32px;
+}
+
+button.botao{
+	width: 100%;
+	margin-top: 24px;
+	padding: 12px;
+	border-radius: 9px;
+	color: white;
+	background-color: rgb(60, 105, 169);
+}
+
+button.botao2{
+	width: 70%;
+	padding: 8px 62px 8px 62px;
+	border-radius: 9px;
+	color: white;
+	background-color: rgba(255,255,255,0.0);
+	border: 2px solid white;
+	border-radius: 4px;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+button{
+	cursor: pointer;
+}
+
+#testemunha{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	height: 250px;
+	background-color: rgb(60, 105, 169);
+	padding-top: 62px;
+	padding-bottom: 62px;
+}
+
+img#perfil{
+	width: 125px;
+	height: 125px;
+}
+
+div.imagem{
+	float: left;
+	padding-right: 18px;
+}
+
+div.texto{
+	float: left;
+	width: 300px;
+	margin-top: -20px;
+}
+
+#energia{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	height: 280px;
+	background-image: url("../img/energia-bg.png");
+	background-size: 52% 280px;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+#energ img{
+	width: 270px;
+	height: 270px;
+	margin-top: 30px;
+}
+
+div.energ{
+	float: right;
+	width: 200px;
+	text-align: left;
+	color: white;
+	margin-top: 30px;
+	margin-left: 34px;
+	font-size: 15px;
+}
+
+div.energ h6{
+	margin-bottom: 34px;
+}
+
+#content{
+	height: auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+form{
+	width: 800px;
+	background-color: #FFFFFF;
+	margin-top: 100px;
+	padding: 0 50px 25px 50px;
+	display: block;
+}
+
+form p{
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+input{
+	width: 100%;
+	padding: 12px;
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+	border-radius: 4px;
+}
+
+textarea{
+	height: 150px;
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+	border-radius: 4px;
+}
+
+#submit{
+	width: 100%;
+	padding: 12px;
+	margin-top: -10px;
+	border-radius: 4px;
+	color: white;
+	background-color: rgb(60, 105, 169);
+}
+
+h2{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+footer{
+	clear: both;
+	border-top: 1px solid #606060;
+	background-color: rgb(60, 105, 169);
+	height: auto;
+	font-size: 13px;
+	color: white;
+}
+
+footer a{
+	text-decoration: none;
+	color: white;
+}
+
+footer a:hover{
+	text-decoration: none;
+	color: white;
+}
+
+#social-icons{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	border-bottom: 1px solid rgba(0, 0, 139, 0.2);
+	padding-bottom: 16px;
+	margin-top: 12px;
+	margin-bottom: 38px;
+}
+
+a.fa{
+  padding: 6px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 12px 15px;
+  border-radius: 50%;
+  background: rgb(173, 174, 179);
+  color: rgb(74, 75, 73);
+}
+
+a.fa-twitter {
+	background-color: rgb(44, 89, 153);
+  	color: white;
+}
+
+h6{
+	padding-left: 16px;
+}
+
+tr, td{
+	padding: 14px;
+	border-bottom: 1px solid rgba(0, 0, 139, 0.2);
+}
+
+.col{
+	margin-bottom: 50px;
+}
+
+div.fa-money{
+	font-size:48px;
+	margin-bottom: 24px;
+}
+
+#barrabaixo{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 40px;
+	font-size: 10px;
+	background-color: rgb(34, 71, 123);
+	color: white;
+}
+
+#direitos{
+	display: flex;
+  	flex-flow: row wrap;
+  	justify-content: center;
+  	height: 0;
+  	margin-bottom: 5px;
+}
+
+#feitopor{
+	display: flex;
+  	flex-flow: row wrap;
+  	justify-content: flex-end;
+  	float: right;
+  	height: 0;
+  	margin-bottom: 25px;
+}
